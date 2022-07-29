@@ -1,87 +1,71 @@
-    @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins&family=Roboto&display=swap");
-    .navbar-brand {
-        font-family: "Pacifico";
-    }
-    
-    .nav-item:hover {
-        background: #eee;
-        border-radius: 5px;
-    }
-    
-    .carousel-item::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #000;
-        opacity: 0.7;
-    }
-    
-    .carousel-caption {
-        position: absolute;
-        top: 12vw;
-        display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins&family=Roboto&display=swap");
+.navbar-brand {
+    font-family: "Pacifico";
+}
+
+.nav-item:hover {
+    background: #eee;
+    border-radius: 5px;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 12vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-caption h1 {
+    font-size: 5vw;
+}
+
+.carousel-caption h4 {
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+
+.carousel-caption button {
+    font-size: 1.3vw;
+    width: 12vw;
+    /* height: 4vw; */
+    padding: 0.7vw 0;
+}
+
+.companies>div>img {
+    width: 80px;
+}
+
+
+/* for mobile */
+
+@media screen and (max-width: 575px) {
+    .earning-section {
         flex-direction: column;
+        width: 80vw;
+        margin: auto auto;
     }
-    
-    .carousel-caption h1 {
-        font-size: 5vw;
+    .earning-section img {
+        height: 300px;
     }
-    
-    .carousel-caption h4 {
-        font-size: 1.5vw;
-        margin: 1vw;
+}
+
+
+/* for tab */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .earning-section img {
+        width: 40vw;
     }
-    
-    .carousel-caption button {
-        font-size: 1.3vw;
-        width: 12vw;
-        /* height: 4vw; */
-        padding: .7vw 0;
-    }
-    
-    .course {
-        height: 15vw;
-    }
-    
-    .course h1 {
-        font-size: 2vw;
-    }
-    
-    .course p {
-        font-size: 1.2vw;
-    }
-    
-    .course h5 {
-        font-size: 1.5vw;
-    }
-    
-    .companies>div>img {
-        width: 50px;
-    }
-    /* for mobile */
-    
-    @media screen and (max-width: 575px) {
-        .course {
-            /* display: flex;
-            flex-direction: column; */
-        }
-        .earning-section {
-            flex-direction: column;
-            width: 80vw;
-            margin: auto auto;
-        }
-        .earning-section img {
-            height: 300px;
-        }
-    }
-    /* for tab */
-    
-    @media screen and (min-width: 576px) and (max-width: 992px) {
-        .earning-section img {
-            width: 40vw;
-        }
-    }
+}
