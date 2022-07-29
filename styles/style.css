@@ -22,7 +22,7 @@
 
 .carousel-caption {
     position: absolute;
-    top: 12vw;
+    top: 10vw;
     display: flex;
     flex-direction: column;
 }
@@ -40,7 +40,7 @@
     font-size: 1.3vw;
     width: 12vw;
     padding: 0.7vw 0;
-    margin: 2vw;
+    margin: 5vw;
 }
 
 .companies>div>img {
